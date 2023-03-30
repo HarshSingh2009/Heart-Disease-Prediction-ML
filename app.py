@@ -47,9 +47,9 @@ with st.form(key='form1'):
                 st.text(f'{choices[0]}: You have Heart Disease, please consult a doctor!!!')
             if predictions[1] == 0:
                 st.balloons()
-                st.success(f'{choices[0] if len(choices) != 0 else "Random Forest (100%)"}: Congratulations,  You don\'t have Heart Disease, Stay Healthy!!!!')
+                st.success(f'{choices[1] if len(choices) != 0 else "Random Forest (100%)"}: Congratulations,  You don\'t have Heart Disease, Stay Healthy!!!!')
             else:
-                st.text(f'{choices[0] if len(choices) != 0 else "Random Forest (100%)"}: You have Heart Disease, please consult a doctor!!!!')
+                st.text(f'{choices[1] if len(choices) != 0 else "Random Forest (100%)"}: You have Heart Disease, please consult a doctor!!!!')
         else:
             if predictions[0] == 0:
                 st.balloons()
